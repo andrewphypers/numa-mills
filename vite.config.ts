@@ -4,7 +4,15 @@ import tailwindcss from '@tailwindcss/vite'
 import fs from 'node:fs'
 import path from 'node:path'
 
-import siteConfiguration from './.figma/make/site.json'
+const siteConfiguration = {
+  title: 'Numa Millworks | Excavation Services in Creston, BC',
+  description:
+    'Ktunaxa-owned excavation services in Creston, BC, including site preparation, trenching, landscaping, and small jobs.',
+  language: 'en',
+  robots: {
+    index: true,
+  },
+}
 
 
 // Vite config — https://vitejs.dev/config/
